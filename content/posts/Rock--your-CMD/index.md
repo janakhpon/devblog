@@ -1,18 +1,18 @@
 ---
-title: 'Getting Started with Operating System'
-date: '2020-01-09'
+title: 'Rock your CMD(Windows New Terminal) for development'
+date: '2020-02-08'
 layout: post
 draft: false
-category: 'Other Stuff'
+category: 'Development Environment'
 tags:
-  - 'Interview'
-  - 'Free development course'
-description: 'Getting Started with Operating System'
-author: 'Htet Yin Min'
+  - 'CMD'
+  - 'Windows Terminal'
+description: 'Rock your CMD(Windows New Terminal) for development'
+author: 'Janakh Pon'
 ---
 
 
-![Operating System](./img.jpg)
+![Windows Terminal](./cmdimg.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio leo, vehicula eu placerat non, cursus a urna. Pellentesque et orci non elit vehicula pulvinar. Vivamus enim sem, elementum vitae tempus sit amet, elementum lacinia est. Donec sit amet ex interdum ex maximus eleifend. Vivamus egestas est ac tellus malesuada, non egestas lorem placerat. Phasellus dictum dapibus mollis. Donec a quam ligula. Curabitur pulvinar quis neque nec imperdiet.
 
