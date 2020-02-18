@@ -8,6 +8,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
+        authorimg
         title
         date(formatString: "MMMM Do, YYYY")
       }

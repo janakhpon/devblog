@@ -34,14 +34,13 @@ const Index = () => {
     <Layout>
       <Grid container spacing={1}>
         <Grid item md={8} xs={12} >
-
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return (
-              <Grid container spacing={2}>
+              <Grid container spacing={2} key={i}>
                 <Grid item xs={12}>
                   <Paper className="paperclass" style={{ boxShadow: 'none', textDecoration: 'none' }}>
                     <h3>
-                      <Link to={`/blog${edge.node.fields.slug}`}>
+                      <Link to={`/article${edge.node.fields.slug}`}>
                         {edge.node.frontmatter.title} by {edge.node.frontmatter.author}
                       </Link>
                     </h3>
@@ -65,22 +64,40 @@ const Index = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} style={{ marginBottom: '2rem' }}>
-              {
-                ''
-              }
+            <Grid item xs={12} style={{ marginTop: '.5rem' }}>
+              <h3>Authors</h3>
             </Grid>
             <Grid item={12}>
+              {
+                console.log(data.allMarkdownRemark.edges)
+                
+              }
+
               <Chip
                 avatar={<Avatar alt="Janakh Pon" src="https://avatars3.githubusercontent.com/u/42414925?s=460&v=4" />}
                 label="Janakh Pon"
                 variant="outlined"
               />
-              <Chip
-                avatar={<Avatar alt="Janakh Pon" src="https://avatars3.githubusercontent.com/u/42414925?s=460&v=4" />}
-                label="Janakh Pon"
-                variant="outlined"
-              />
+            </Grid>
+            <Grid item xs={12} style={{ marginTop: '.5rem' }}>
+              <h3>Categories</h3>
+            </Grid>
+            <Grid item={12}>
+              <Chip size="medium" label="tags" />
+              <Chip size="medium" label="tags" />
+              <Chip size="medium" label="tags" />
+            </Grid>
+            <Grid item xs={12} style={{ marginTop: '.5rem' }}>
+              <h3>Tags</h3>
+            </Grid>
+            <Grid item={12}>
+              <Chip size="small" label="tags" />
+              <Chip size="small" label="tags" />
+              <Chip size="small" label="tags" />
+              <Chip size="small" label="tags" />
+              <Chip size="small" label="tags" />
+              <Chip size="small" label="tags" />
+              <Chip size="small" label="tags" />
             </Grid>
           </Grid>
         </Grid>

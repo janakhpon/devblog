@@ -9,6 +9,7 @@ tags:
   - 'Windows Terminal'
   - 'CLI'
 author: 'Janakh Pon'
+authorimg: 'https://avatars3.githubusercontent.com/u/42414925?s=100&v=4'
 ---
 
 

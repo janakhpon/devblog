@@ -10,6 +10,7 @@ tags:
   - 'Development Environment'
   - 'IDE'
 author: 'Htet Yin Min'
+authorimg: 'https://avatars3.githubusercontent.com/u/51188508?s=100&v=4'
 ---
 
 
