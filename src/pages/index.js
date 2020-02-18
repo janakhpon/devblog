@@ -36,6 +36,7 @@ const Index = () => {
             frontmatter {
               title
               author
+              authorimg
               date(formatString: "MMMM Do, YYYY")
             }
           }
@@ -44,8 +45,14 @@ const Index = () => {
     }
   `);
 
-  let uniqueauthors = [...new Set(state.map(item => item.author))];
-  console.log(uniqueauthors)
+  const uniqueauthors = state.reduce((item, current) => {
+    const x = item.find(item => item.author === current.author);
+    if (!x) {
+      return item.concat([current]);
+    } else {
+      return item;
+    }
+  }, []);
 
   return (
     <Layout>
