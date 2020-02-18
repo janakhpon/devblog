@@ -3,13 +3,11 @@ title: 'Understanding the Supernetting in Networking'
 date: '2020-01-09'
 layout: post
 draft: false
-category: 'Other Stuff'
+category: 'Networking'
 tags:
-  - 'Interview'
-  - 'Free development course'
-description: 'Understanding the Supernetting in Networking'
+  - 'Supernetting'
+  - 'Subnetting'
 author: 'Win Win Htet Kyaw'
-slug: 'gdevpost0002'
 ---
 
 

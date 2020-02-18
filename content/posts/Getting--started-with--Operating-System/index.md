@@ -3,11 +3,12 @@ title: 'Getting Started with Operating System'
 date: '2020-01-09'
 layout: post
 draft: false
-category: 'Other Stuff'
+category: 'Operating System'
 tags:
-  - 'Interview'
-  - 'Free development course'
-description: 'Getting Started with Operating System'
+  - 'OS'
+  - 'Server'
+  - 'Development Environment'
+  - 'IDE'
 author: 'Htet Yin Min'
 ---
 

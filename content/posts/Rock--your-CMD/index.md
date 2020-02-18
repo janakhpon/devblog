@@ -7,7 +7,7 @@ category: 'Development Environment'
 tags:
   - 'CMD'
   - 'Windows Terminal'
-description: 'Rock your CMD(Windows New Terminal) for development'
+  - 'CLI'
 author: 'Janakh Pon'
 ---
 

@@ -3,13 +3,14 @@ title: 'A moment with Responsiveness in CSS world (Flex/Grid)'
 date: '2020-01-09'
 layout: post
 draft: false
-category: 'Other Stuff'
+category: 'Design'
 tags:
-  - 'Interview'
-  - 'Free development course'
-description: 'A moment with Responsiveness in CSS world (Flex/Grid)'
+  - 'CSS'
+  - 'UI/UX'
+  - 'Flex'
+  - 'Grid'
+  - 'Responsiveness'
 author: 'Janakh Pon'
-slug: 'gdevpost0000'
 ---
 
 
