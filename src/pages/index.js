@@ -42,7 +42,7 @@ const Index = () => {
                   <Paper className="paperclass" style={{ boxShadow: 'none', textDecoration: 'none' }}>
                     <h3>
                       <Link to={`/blog${edge.node.fields.slug}`}>
-                        {edge.node.frontmatter.title} by {edge.node.frontmatter.author}/{edge.node.frontmatter.date}
+                        {edge.node.frontmatter.title} by {edge.node.frontmatter.author}
                       </Link>
                     </h3>
                   </Paper>

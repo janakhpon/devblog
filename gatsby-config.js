@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     author: 'Janakh Pon',
-    title: 'Gatsby Starter',
+    title: 'GD',
     description:
       'Gatsby Ready to use starter tweaked with my favorite plugins for future projects. ',
   },
@@ -48,8 +48,5 @@ module.exports = {
       },
     },
   ],
-  siteMetadata: {
-    title: 'My page',
-  },
 };
 

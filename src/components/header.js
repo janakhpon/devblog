@@ -148,14 +148,14 @@ const Header = ({ siteTitle }) => {
               <ListItemText>HOME</ListItemText>
             </ListItem>
           </Link>
-          <Link to="/blog">
+          {/* <Link to="/blog">
             <ListItem button>
               <ListItemIcon>
                 <ListIcon />
               </ListItemIcon>
               <ListItemText>BLOG</ListItemText>
             </ListItem>
-          </Link>
+          </Link> */}
         </List>
       </Drawer>
     </div>
