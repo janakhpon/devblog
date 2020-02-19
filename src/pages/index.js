@@ -1,29 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Grid from '@material-ui/core/Grid'
-import Chip from '@material-ui/core/Chip'
-import Avatar from '@material-ui/core/Avatar'
 import TextField from '@material-ui/core/TextField'
 import SearchIcon from '@material-ui/icons/Search';
-import Paper from '@material-ui/core/Paper';
 
 import Layout from '../components/layout';
 import ArticleItem from '../components/articleItem'
 import ChipAuthor from '../components/ChipAuthor'
+import ChipItem from '../components/ChipItem'
+
 import styles from './index.module.scss';
 
 const Index = () => {
-
-  const [state, setState] = useState([]);
+  const [state, setState] = useState([])
   const [category, setCategory] = useState([])
   const [tag, setTag] = useState([])
   const host = [];
   const categoryhost = [];
   const taghost = [];
-  const tryy = []
-  // change state on scroll
-  useEffect(() => {
 
+  useEffect(() => {
     const getMeta = () => {
       data.allMarkdownRemark.edges.map((edge, key) => {
         let passme = { author: edge.node.frontmatter.author, authorimg: edge.node.frontmatter.authorimg, key: key }
@@ -31,29 +27,22 @@ const Index = () => {
       })
       setState(host)
 
-      data.allMarkdownRemark.edges.map((edge, key) => {
-        let passme = { category: edge.node.frontmatter.category, key: key }
-        return categoryhost.push(passme)
+      data.allMarkdownRemark.edges.map((edge) => {
+        return categoryhost.push(edge.node.frontmatter.category)
       })
       setCategory(categoryhost)
 
-      data.allMarkdownRemark.edges.map((edge, key) => {
+      data.allMarkdownRemark.edges.map((edge) => {
         edge.node.frontmatter.tags.map((edge) => {
           return taghost.push(edge)
         })
-        console.log(taghost)
         return setTag(taghost)
       })
-
     }
-
     try {
       getMeta()
     } catch (err) {
-
     }
-
-
   }, []);
 
 
@@ -88,7 +77,6 @@ const Index = () => {
     }
   }, []);
 
-
   return (
     <Layout>
       <Grid container spacing={1}>
@@ -112,7 +100,7 @@ const Index = () => {
             <Grid item xs={12} style={{ marginTop: '.5rem' }}>
               <h3>Authors</h3>
             </Grid>
-            <Grid item={12}>
+            <Grid item xs={12}>
               {
                 uniqueauthors.map((ua, i) => {
                   return <ChipAuthor author={ua.author} authorimg={ua.authorimg} key={i} />
@@ -122,22 +110,22 @@ const Index = () => {
             <Grid item xs={12} style={{ marginTop: '.5rem' }}>
               <h3>Categories</h3>
             </Grid>
-            <Grid item={12}>
-              <Chip size="medium" label="tags" />
-              <Chip size="medium" label="tags" />
-              <Chip size="medium" label="tags" />
+            <Grid item xs={12}>
+              {
+                category.map((item, i) => {
+                  return <ChipItem tagval={item} key={i} />
+                })
+              }
             </Grid>
             <Grid item xs={12} style={{ marginTop: '.5rem' }}>
               <h3>Tags</h3>
             </Grid>
-            <Grid item={12}>
-              <Chip size="small" label="tags" />
-              <Chip size="small" label="tags" />
-              <Chip size="small" label="tags" />
-              <Chip size="small" label="tags" />
-              <Chip size="small" label="tags" />
-              <Chip size="small" label="tags" />
-              <Chip size="small" label="tags" />
+            <Grid item xs={12}>
+              {
+                tag.map((item, i) => {
+                  return <ChipItem tagval={item} key={i} />
+                })
+              }
             </Grid>
           </Grid>
         </Grid>
@@ -145,6 +133,5 @@ const Index = () => {
     </Layout>
   );
 };
-
 
 export default Index
