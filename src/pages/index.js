@@ -9,19 +9,51 @@ import Paper from '@material-ui/core/Paper';
 
 import Layout from '../components/layout';
 import ArticleItem from '../components/articleItem'
+import ChipAuthor from '../components/ChipAuthor'
 import styles from './index.module.scss';
 
 const Index = () => {
 
   const [state, setState] = useState([]);
+  const [category, setCategory] = useState([])
+  const [tag, setTag] = useState([])
   const host = [];
+  const categoryhost = [];
+  const taghost = [];
+  const tryy = []
   // change state on scroll
   useEffect(() => {
-    data.allMarkdownRemark.edges.map((edge, key) => {
-      let passme = { author: edge.node.frontmatter.author, authorimg: edge.node.frontmatter.authorimg, key: key }
-      return host.push(passme)
-    })
-    setState(host)
+
+    const getMeta = () => {
+      data.allMarkdownRemark.edges.map((edge, key) => {
+        let passme = { author: edge.node.frontmatter.author, authorimg: edge.node.frontmatter.authorimg, key: key }
+        return host.push(passme)
+      })
+      setState(host)
+
+      data.allMarkdownRemark.edges.map((edge, key) => {
+        let passme = { category: edge.node.frontmatter.category, key: key }
+        return categoryhost.push(passme)
+      })
+      setCategory(categoryhost)
+
+      data.allMarkdownRemark.edges.map((edge, key) => {
+        edge.node.frontmatter.tags.map((edge) => {
+          return taghost.push(edge)
+        })
+        console.log(taghost)
+        return setTag(taghost)
+      })
+
+    }
+
+    try {
+      getMeta()
+    } catch (err) {
+
+    }
+
+
   }, []);
 
 
@@ -37,6 +69,8 @@ const Index = () => {
               title
               author
               authorimg
+              category
+              tags
               date(formatString: "MMMM Do, YYYY")
             }
           }
@@ -53,6 +87,7 @@ const Index = () => {
       return item;
     }
   }, []);
+
 
   return (
     <Layout>
@@ -80,13 +115,7 @@ const Index = () => {
             <Grid item={12}>
               {
                 uniqueauthors.map((ua, i) => {
-                  return (
-                    <Chip
-                      avatar={<Avatar alt={ua.author} src={ua.authorimg} />}
-                      label={ua.author}
-                      variant="outlined"
-                    />
-                  )
+                  return <ChipAuthor author={ua.author} authorimg={ua.authorimg} key={i} />
                 })
               }
             </Grid>
