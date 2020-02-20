@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Grid from '@material-ui/core/Grid'
 import Avatar from '@material-ui/core/Avatar'
+
 import styles from './articleItem.module.scss';
 
 const ArticleItem = ({ slug, title, author, authorimg, date }) => {

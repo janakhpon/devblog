@@ -1,0 +1,12 @@
+.goback {
+    text-decoration: none;
+    color: #44d62c !important;
+}
+
+.goback:hover::after {
+    content: '  to home page' !important;
+    color: #44d62c !important;
+    font-size: 1.2em !important;
+    font-weight: bolder !important;
+    transition: 0.8s !important;
+}
