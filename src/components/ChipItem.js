@@ -8,6 +8,9 @@ const ChipItem = ({ tagval }) => {
         <Chip
             label={tagval}
             variant="outlined"
+            clickable
+            color="primary"
+            className={styles.chip}
         />
     )
 }
