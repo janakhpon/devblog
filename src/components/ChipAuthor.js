@@ -10,7 +10,9 @@ const ChipAuthor = ({ author, authorimg }) => {
             <Chip
                 avatar={<Avatar alt={author} src={authorimg} />}
                 label={author}
+                clickable
                 variant="outlined"
+                className={styles.author}
             />
         </>
     )

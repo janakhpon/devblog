@@ -1,0 +1,33 @@
+.searchSection {
+    color: white !important;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.authorSection {
+    background-color: #222222 !important;
+    color: white !important;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border: .1rem solid #111111;
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 26vh;
+    overflow-y: auto;
+}
+
+
+.authorSection::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+.authorSection::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px #fff !important;
+    box-shadow: inset 0 0 4px #fff !important;
+}
+
+.authorSection::-webkit-scrollbar-thumb {
+    background-color: #44d62c !important;
+    outline: 0.1rem solid #222222 !important;
+    border-radius: 0.2rem;
+}

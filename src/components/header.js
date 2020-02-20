@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    background: '#e0e0e0'
+    background: '#222222'
   },
   drawerHeader: {
     display: 'flex',
@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
     padding: '0 8px',
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
-    background: '#e0e0e0'
+    background: '#222222'
   },
   content: {
     flexGrow: 1,
@@ -107,15 +107,14 @@ const Header = ({ siteTitle }) => {
       >
         <Toolbar>
           <IconButton
-            color="inherit"
             aria-label="Open drawer"
             onClick={handleDrawerOpen}
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
-            <MenuIcon />
+            <MenuIcon className={styles.menuicon} />
           </IconButton>
-          <Typography variant="h6" color="inherit">
+          <Typography variant="h4" className={styles.siteTitle}>
             {siteTitle}
           </Typography>
         </Toolbar>
@@ -132,9 +131,9 @@ const Header = ({ siteTitle }) => {
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? (
-              <ChevronLeftIcon />
+              <ChevronLeftIcon className={styles.menuicon} />
             ) : (
-                <ChevronRightIcon />
+                <ChevronRightIcon className={styles.menuicon} />
               )}
           </IconButton>
         </div>
@@ -143,9 +142,9 @@ const Header = ({ siteTitle }) => {
           <Link to="/">
             <ListItem button>
               <ListItemIcon>
-                <HomeIcon />
+                <HomeIcon className={styles.menuicon} />
               </ListItemIcon>
-              <ListItemText>HOME</ListItemText>
+              <ListItemText className={styles.siteTitle}>HOME</ListItemText>
             </ListItem>
           </Link>
           {/* <Link to="/blog">

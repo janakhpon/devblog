@@ -8,6 +8,7 @@ import Layout from '../components/layout';
 import ArticleItem from '../components/articleItem'
 import ChipAuthor from '../components/ChipAuthor'
 import ChipItem from '../components/ChipItem'
+import SearchItem from '../components/SearchItem'
 
 import styles from './index.module.scss';
 
@@ -79,48 +80,35 @@ const Index = () => {
 
   return (
     <Layout>
-      <Grid container spacing={1}>
+      <Grid container spacing={2}>
         <Grid item md={8} xs={12} >
           {data.allMarkdownRemark.edges.map((edge, i) => {
-            return <ArticleItem slug={edge.node.fields.slug} title={edge.node.frontmatter.title} author={edge.node.frontmatter.author} key={i} />;
+            return <ArticleItem slug={edge.node.fields.slug} title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} author={edge.node.frontmatter.author} authorimg={edge.node.frontmatter.authorimg} key={i} />;
           })}
         </Grid>
         <Grid item md={4} xs={12} >
           <Grid container>
-            <Grid item xs={12}>
-              <Grid container spacing={1} alignItems="flex-end">
-                <Grid item>
-                  <SearchIcon fontSize="large" />
-                </Grid>
-                <Grid item>
-                  <TextField id="input-with-icon-grid" label="..." fullWidth />
-                </Grid>
-              </Grid>
+            <Grid item xs={12} className={styles.searchSection}>
+              <SearchItem />
             </Grid>
-            <Grid item xs={12} style={{ marginTop: '.5rem' }}>
+            <Grid item xs={12} className={styles.authorSection}>
               <h3>Authors</h3>
-            </Grid>
-            <Grid item xs={12}>
               {
                 uniqueauthors.map((ua, i) => {
                   return <ChipAuthor author={ua.author} authorimg={ua.authorimg} key={i} />
                 })
               }
             </Grid>
-            <Grid item xs={12} style={{ marginTop: '.5rem' }}>
+            <Grid item xs={12} className={styles.authorSection}>
               <h3>Categories</h3>
-            </Grid>
-            <Grid item xs={12}>
               {
                 category.map((item, i) => {
                   return <ChipItem tagval={item} key={i} />
                 })
               }
             </Grid>
-            <Grid item xs={12} style={{ marginTop: '.5rem' }}>
+            <Grid item xs={12} className={styles.authorSection} id="tagscroll">
               <h3>Tags</h3>
-            </Grid>
-            <Grid item xs={12}>
               {
                 tag.map((item, i) => {
                   return <ChipItem tagval={item} key={i} />
