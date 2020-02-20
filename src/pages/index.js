@@ -79,12 +79,12 @@ const Index = () => {
   return (
     <Layout>
       <Grid container spacing={2}>
-        <Grid item md={8} xs={12} >
+        <Grid item md={8} xs={12} className={styles.articlecontainer} id="articlepane">
           {data.allMarkdownRemark.edges.map((edge, i) => {
             return <ArticleItem slug={edge.node.fields.slug} title={edge.node.frontmatter.title} date={edge.node.frontmatter.date} author={edge.node.frontmatter.author} authorimg={edge.node.frontmatter.authorimg} key={i} />;
           })}
         </Grid>
-        <Grid item md={4} xs={12} >
+        <Grid item md={4} xs={12} id="optionspane">
           <Grid container>
             <Grid item xs={12} className={styles.searchSection}>
               <SearchItem />

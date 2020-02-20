@@ -19,7 +19,7 @@ import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import HomeIcon from '@material-ui/icons/Home'
-
+import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 
 import styles from './header.module.scss';
 const drawerWidth = 240
@@ -113,8 +113,8 @@ const Header = ({ siteTitle }) => {
           >
             <MenuIcon className={styles.menuicon} />
           </IconButton>
-          <Typography variant="h4" className={styles.siteTitle}>
-            {siteTitle}
+          <Typography variant="h4">
+            <Link to="#articlepane" className={styles.siteTitle}>{siteTitle}</Link>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -146,14 +146,14 @@ const Header = ({ siteTitle }) => {
               <ListItemText className={styles.siteTitle}>HOME</ListItemText>
             </ListItem>
           </Link>
-          {/* <Link to="/blog">
+          <Link to="#optionspane">
             <ListItem button>
               <ListItemIcon>
-                <ListIcon />
+                <DynamicFeedIcon className={styles.menuicon} />
               </ListItemIcon>
-              <ListItemText>BLOG</ListItemText>
+              <ListItemText className={styles.siteTitle}> INFO </ListItemText>
             </ListItem>
-          </Link> */}
+          </Link>
         </List>
       </Drawer>
     </div>
