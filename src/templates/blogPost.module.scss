@@ -1,0 +1,47 @@
+body,html{
+    overflow: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.avatar {
+    width: 4rem !important;
+    height: 4rem !important;
+}
+
+.tagchip {
+    background-color: #44d62c !important;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+.container{
+    background-color: #222222 !important;
+    color: white !important;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border: .1rem solid #111111;
+    border-radius: 0.5rem;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px #fff !important;
+    box-shadow: inset 0 0 4px #fff !important;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #44d62c !important;
+    outline: 0.1rem solid #222222 !important;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+
+.container::-webkit-scrollbar-thumb:active{
+    cursor: grabbing !important;
+}

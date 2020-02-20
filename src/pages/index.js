@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Grid from '@material-ui/core/Grid'
-import TextField from '@material-ui/core/TextField'
-import SearchIcon from '@material-ui/icons/Search';
 
 import Layout from '../components/layout';
 import ArticleItem from '../components/articleItem'
