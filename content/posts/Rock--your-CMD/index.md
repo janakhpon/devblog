@@ -1,6 +1,6 @@
 ---
-title: 'Rock your CMD(Windows New Terminal) for development'
-date: '2020-02-08'
+title: 'Rock your CMD 🎊🎊'
+date: '2020-02-06'
 layout: post
 draft: false
 category: 'Development Environment'
@@ -13,44 +13,47 @@ authorimg: 'https://avatars3.githubusercontent.com/u/42414925?s=100&v=4'
 ---
 
 
-![Windows Terminal](./cmdimg.jpg)
+Rock your CMD 🎊🎊
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio leo, vehicula eu placerat non, cursus a urna. Pellentesque et orci non elit vehicula pulvinar. Vivamus enim sem, elementum vitae tempus sit amet, elementum lacinia est. Donec sit amet ex interdum ex maximus eleifend. Vivamus egestas est ac tellus malesuada, non egestas lorem placerat. Phasellus dictum dapibus mollis. Donec a quam ligula. Curabitur pulvinar quis neque nec imperdiet.
+Developer တိုင်း နဲ့ မလွတ်ကင်းနိုင် တဲ့ အရာတခုကတော့ Command Line Interface(CLI) ပါ. Code ရေး တဲ့ သူ အတော်များများကတော့ Windows ရဲ့ CMD ကို Linux/Unix တို့ရဲ့ Terminal နဲ့ နှိုင်းပြီးလှောင် တတ်ကြပါတယ်..
 
-Aliquam ut enim quis dui luctus efficitur. Praesent ac faucibus leo, id pulvinar ligula. Vestibulum laoreet, magna id dapibus maximus, leo nulla rutrum lacus, eget fermentum purus lorem in felis. Morbi efficitur odio at ligula condimentum elementum. In in laoreet mi, nec porta purus. Proin pulvinar consectetur felis sit amet vehicula. Fusce vehicula posuere lacus a porta. Curabitur tincidunt placerat lectus, non pretium lacus faucibus ac. Vivamus eu blandit nibh. Donec non mollis nulla, aliquet vulputate tellus. Nam dictum tempor turpis sed dictum. Suspendisse potenti. Nunc et dictum est, sit amet aliquam elit. Mauris finibus bibendum mauris sed luctus. Proin sed odio vulputate nibh fringilla bibendum. Nullam sit amet justo non turpis volutpat laoreet.
+အခုရော ?
+Windows ရဲ ့ next big step ပေါ့ configure လုပ်ပြီး သုံးချင်သူတွေ အတွက် ကိုယ်တိုင် tweak လုပ်နိုင်မယ့် Window Terminal ကို microsoft က ထုတ်ပြလိုက်ပါပြီး.
+Linux ထက်တောင် ပိုပြီး customize လုပ်လို့ ရနိုင်တဲ့ options တွေပေးထားတာမို့ Windows နဲ့ develop လုပ်နေတဲ့ Bro တွေအတွက် သတင်းကောင်းပေါ့
+နောက် တခု က Linux /Unix Environment မှာ လူကြိုက်များနေတဲ့ Z-Shell နဲ့ Z-Shell ရဲ့ နာမည် ကြီး plugins တွေနဲ့ ဆင်တူတဲ့ Wndows Terminal(preview) တွေလည်း ရှိတာ် အဲ့ဒါ အပြင် Ubuntu Terminal ပုံစံ မျိုးလည်း integration လုပ်သုံးခွင့် ပေးထားသေးတော့ အရမ်းမိုက်သွားပြီးပေါ့ 😁
 
-Pellentesque tincidunt sapien at enim venenatis dapibus. Nunc sit amet pretium augue, nec ultrices nunc. Ut accumsan ullamcorper ultrices. Vivamus fermentum ligula ac nisi pulvinar tincidunt. Etiam et massa nec nibh elementum luctus. Vestibulum interdum nunc mauris, id eleifend felis faucibus sed. Nam eget nisl diam. In facilisis ligula et libero sodales bibendum. Mauris fermentum molestie diam vitae gravida. Donec venenatis posuere interdum.
+⚠️ warning ! ဒါပေမယ့် အဲ့ လို plugins / integration တွေက ထည့်ပြီးရင် လေးသွားလို့ အားမပေးပါဘူး
 
-Proin diam enim, mollis sed turpis eu, ornare pretium tellus. Integer a tempor ante. Nulla arcu urna, viverra a aliquet nec, pulvinar id elit. Aenean lectus arcu, gravida vel sapien sed, varius commodo eros. Aliquam venenatis dui ut nisl fringilla, sed accumsan mi tempus. Nam maximus nec metus sed eleifend. Integer dapibus consectetur interdum. Donec tincidunt sit amet urna dictum commodo.
+How to configure ? then...
 
-Aliquam a nunc in mauris pulvinar cursus sodales vitae est. Praesent lacus magna, dictum eget dolor sit amet, tincidunt blandit nunc. Nam non tempor elit. Sed quis ultricies leo, vel ultricies erat. Sed vel porttitor massa. Morbi lorem orci, vestibulum sit amet leo non, sodales congue velit. Nullam rhoncus molestie sodales. Nullam in nibh finibus, lacinia ante sagittis, efficitur diam. Nullam pharetra tincidunt porta. Pellentesque eu maximus ex. Duis eget nisl sed tellus semper rutrum. Vestibulum eleifend convallis quam at maximus. Donec faucibus lectus dui, ut placerat magna consequat ac. Nullam ipsum neque, porta volutpat feugiat ac, auctor a diam. Nunc varius id ex ac ultricies. Morbi euismod id leo vitae sollicitudin.
+မိတ်စက်ပြီးပြီး ဆိုတော့.. ဘယ်လို configure လုပ်ရမလဲ ဆိုတာ ပြောပြပေးသွားပါမယ်..
 
-Donec eget lectus vulputate, semper risus a, vestibulum elit. Vivamus tincidunt maximus semper. Donec semper ante massa. Nulla facilisi. Aenean sed vulputate lorem. Integer ac urna sed ligula rhoncus iaculis. Curabitur tristique cursus neque. Sed finibus faucibus eros. Pellentesque rhoncus ligula at libero viverra consequat.
+1. ပထမဆုံးကတော့ Microsoft Store ထဲ သွားပြီး Windows Terminal(Preview) ကို install လုပ်ပါ
 
-Pellentesque a turpis est. Sed quis posuere massa, et pretium eros. Nulla non maximus nisl, vitae facilisis lorem. Nam sodales mauris et tortor gravida mattis. Morbi iaculis, odio id luctus feugiat, sem ipsum malesuada erat, non faucibus est turpis eu dui. Nunc sed dolor sed elit dictum luctus. Morbi a turpis sapien. Duis ac ultrices lorem. Nam feugiat leo eget velit euismod, nec interdum odio congue. Proin ut lorem turpis. Etiam sed tortor iaculis urna semper suscipit a ac metus. Phasellus et volutpat nisi. Fusce condimentum, erat vitae ullamcorper lacinia, erat lacus lacinia nisl, id mattis mauris risus sed neque. Quisque elit nisi, eleifend ac luctus sed, porta vitae lacus. Morbi rhoncus diam cursus, fringilla ipsum at, sodales purus. Aliquam non metus interdum, convallis mauris nec, ultrices est.
+2. install လုပ်ပြီးရင် ပေါ်လာမယ့် terminal က ပုံ တုံးနေဦးမယ် အဲ့အတွက် ကိုယ်ကြိုက်တဲ့ theme တွေနဲ့ configure လုပ်လို့ ရပါတယ်
+Theme ဆိုတာနဲ့ Linux/Unix terminal လိုမျိုး official theme file တွေ ကို သွားပြီး install လုပ်လို့ မရသေးပါဘူး ဘာလို့လဲ ဆိုတော့ Windows Terminal က preview edition ထဲ မှာပဲ ရှိသေးလို့ပါ
+အဲ့အတွက်ကြောင့် ကိုယ်ပိုင် custom theme/ fonts တွေ သတ်မှတ်ပေး ရမယ်ပေါ့
 
-Aliquam rutrum finibus fermentum. Nunc et pellentesque leo, ac vulputate urna. Nullam urna nulla, fermentum quis ullamcorper sit amet, aliquet id diam. Donec id euismod ex. Maecenas vehicula magna ac elit euismod fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis egestas rhoncus. Sed posuere, elit et vulputate pellentesque, quam sem ullamcorper nulla, rutrum imperdiet orci nulla eleifend ante. Nullam facilisis, orci quis cursus imperdiet, tortor risus consectetur dolor, quis cursus neque ante in dolor. Duis nec ornare turpis. Nunc pellentesque nunc risus, nec lacinia augue imperdiet et. Ut at ligula turpis. Integer eu odio finibus arcu imperdiet eleifend. Aliquam risus sem, aliquam a suscipit ac, iaculis vel nulla.
+အောက်က ပုံအတိုင်း Settings ကို နှိပ်လိုက်ရင် ကိုယ့်ရဲ့ default editor ပွင့်လာလိမ့်မယ်
 
-Praesent vel sem dictum, aliquam ipsum vitae, dapibus est. Integer mattis neque non tincidunt rutrum. Nam a aliquam dui. Nunc libero lectus, tincidunt quis metus eu, euismod rutrum sem. Aliquam non laoreet quam. Vestibulum posuere justo laoreet est consequat fringilla. Vivamus et semper turpis. Integer pretium malesuada neque, vitae ultricies ligula. Aliquam vehicula leo velit, ultricies consectetur nibh faucibus nec. Curabitur consectetur arcu luctus mi vehicula vestibulum. Curabitur vel maximus sapien, ornare faucibus mauris. Etiam eget elementum tellus. Sed ligula nulla, accumsan molestie sem mattis, suscipit bibendum sem. Curabitur nec accumsan urna. Praesent egestas eget leo sed lacinia.
+![step 1](./84116712_477902886163295_2428579778530377728_n.jpg)
 
-Nulla blandit eget lectus commodo varius. Ut suscipit porta eros. Proin interdum fringilla arcu, sed varius tellus porta eget. Nam in euismod elit. Morbi convallis hendrerit lectus non dapibus. Aliquam imperdiet, lectus vitae blandit cursus, odio nibh placerat diam, a sagittis quam est vitae lorem. Duis sollicitudin arcu et ligula venenatis, vel vulputate quam scelerisque. Nam sit amet nulla quis dui maximus finibus. Etiam lobortis velit et iaculis sollicitudin. Praesent sapien arcu, congue quis tincidunt at, volutpat eu nulla. Aenean sit amet suscipit nisl.
+3. Editor ထဲ မှာ တော့ cmd / Window Power shell အတွက် Color Scheme (သို့မဟုတ်) theme အတွက် properties တွေ ရေးပေးရပါမယ်
+4. Color Scheme/theme အတွက် properies ရေးတာက CSS ရေးဖူးသူတိုင်း ရေးရလွယ်မှာပါ. အောက်မှာ sample လေး ပေးထားတယ်
+5. ပုံက profiles ထဲ မှာ "name":"cmd" ဆိုတာက cmd ရဲ့ profile ပါ.. cmd အတွက် theme ပေး ချင်ရင် အဲ့ profile ထဲက colorSchme နေရာမှာ ကိုယ့်ရဲ့ theme name လေး ရေးပေးလိုက်ရုံပဲ
+6. ဒါဖြင့် colorSchme/theme က ဘယ်မှာရေးရမှာလဲ ? အဲ့ profiles.json file အောက်ဆုံး schemes ဆိုတဲ့ array ထဲမှာ object တခုအနေ နဲ့ ရေးပေးရပါမယ် ပြီးရင် အဲ့object ထဲ မှာ theme name လေး သတ်မှတ်လိုက်ရင် ရပါပြီး
+example က ပုံထဲကအတိုင်း..
 
-Praesent vel sem dictum.
+![step 2](./84680424_477902889496628_6043919760373055488_n.jpg)
 
-1. Praesent vel sem dictum
 
-2. Praesent vel sem dictum
+အားလုံး ခြုံပြောရရင်
+profile ထဲက CMD ဖြစ် ဖြစ် Power Shell ဖြစ်ဖြစ် custom theme လေး ထည့်ချင်ရင် အောက် က schemes array မှာ theme object လေးတခု ဆောက်ပြီး နာမယ်ပေး ရမယ် အဲ့နာမယ် ကိုပဲ အပေါ်က profile ထဲ ကိုယ် customize လုပ်ချင်တဲ့ cmd/powershell/azure shell တွေမှာ scheme နာမည်ကို "colorScheme":"themename" လေး တူအောင်ရေးလိုက်ရုံပါပဲ
 
-- It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+![overall](./84357143_477902922829958_1559745273649954816_n.jpg)
 
-3. Praesent vel sem dictum
+မရှင်းတာလေးများ ရှိရင် Cb မှာ message ပို့ထားပေးပါ ✌️
+အားလုံး အဆင်ပြေပါစေ 🙏
 
-4. Praesent vel sem dictum
 
-- It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
 
-5. Praesent vel sem dictum
-
-- Praesent vel sem dictum
-
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
