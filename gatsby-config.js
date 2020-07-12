@@ -4,10 +4,18 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    author: 'Janakh Pon',
-    title: 'GD',
+    date: '2020-01-09',
+    draft: false,
+    category: 'Development',
+    tags: [
+      'OS',
+      'Server',
+      'Development Environment',
+      'IDE'],
+    author: 'GDevs',
+    title: 'Myanmar Developers',
     description:
-      'Gatsby Ready to use starter tweaked with my favorite plugins for future projects. ',
+      'Blogs for Myanmar Based Developers',
   },
   plugins: [
     'gatsby-plugin-top-layout',

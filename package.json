@@ -26,8 +26,10 @@
     "styled-components": "^5.0.1"
   },
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "gatsby build",
+    "develop": "yarn run clean && gatsby develop",
+    "build": "yarn run clean && gatsby build",
+    "clean:public": "rm -rf public",
+    "clean": "rimraf .cache public",
     "serve": "gatsby serve",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   }
