@@ -13,7 +13,7 @@ module.exports = {
       'Development Environment',
       'IDE'],
     author: 'GDevs',
-    title: 'Myanmar Developers',
+    title: 'GDevs',
     description:
       'Blogs for Myanmar Based Developers',
   },
