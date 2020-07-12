@@ -44,4 +44,38 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+
+  const authorTemplate = path.resolve('src/templates/authors.js');
+  const resauthor = await graphql(
+    `
+    query{
+      allMarkdownRemark{
+      edges {
+          node {
+          frontmatter {
+              author
+              authorimg
+              category
+              date
+              draft
+              layout
+              tags
+              title
+          }
+          }
+      }
+      }
+  }
+    `
+  );
+
+  resauthor.data.allMarkdownRemark.edges.forEach(edge => {
+    createPage({
+      path: `/authors${edge.node.frontmatter.author}`,
+      component: authorTemplate,
+      context: {
+        author
+      },
+    });
+  });
 };
